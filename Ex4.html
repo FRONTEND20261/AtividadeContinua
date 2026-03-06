@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Exercício 2</title>
+    <title>Exercício 4</title>
 
     <style>
         body{
@@ -36,6 +36,21 @@
             margin-top: 50px;
             font-size: 16px;
         }
+
+        /* CSS adicionado apenas para a tabela */
+
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
     </style>
 </head>
 
@@ -59,7 +74,6 @@
             <article>
                 <h3>
                     South Park
-                    </a>
                 </h3>
                 <p>
                     South Park é uma série animada voltada para o público adulto que acompanha o cotidiano de quatro amigos
@@ -71,7 +85,6 @@
             <article>
                 <h3>
                     Harry Potter
-                    </a>
                 </h3>
                 <p>
                     Harry Potter é uma saga de fantasia escrita por J.K. Rowling que acompanha a história de um garoto que descobre,
@@ -82,12 +95,12 @@
             <article>
                 <h3>
                     Os Simpsons
-                    </a>
+                    
                 </h3>
-                <p>
+              
                     Os Simpsons é uma série animada que retrata a vida da família Simpson na cidade fictícia de Springfield.
                     Com humor leve e satírico, a série faz críticas à sociedade, à política e à cultura.
-                </p>
+                
             </article>
         </section>
 
@@ -134,6 +147,65 @@
                     </a>
                 </li>
             </ul>
+        </section>
+
+        <section>
+            <h2>Horários das Disciplinas</h2>
+
+            <table>
+
+                <tr>
+                    <th colspan="2"></th>
+                    <th colspan="5">DIAS DA SEMANA</th>
+                </tr>
+
+                <tr>
+                    <th rowspan="5">HORÁRIOS</th>
+                    <th></th>
+                    <th>SEG</th>
+                    <th>TER</th>
+                    <th>QUA</th>
+                    <th>QUI</th>
+                    <th>SEX</th>
+                </tr>
+
+                <tr>
+                    <th>18h30</th>
+                    <td>Dispensado</td>
+                    <td>Programação Orientada a Objetos</td>
+                    <td>Dispensado</td>
+                    <td>Programação Orientada a Objetos</td>
+                    <td>Atividades de Extensão I</td>
+                </tr>
+
+                <tr>
+                    <th>19h25</th>
+                    <td>Dispensado</td>
+                    <td>Programação Orientada a Objetos</td>
+                    <td>Dispensado</td>
+                    <td>Programação Orientada a Objetos</td>
+                    <td>Atividades de Extensão I</td>
+                </tr>
+
+                <tr>
+                    <th>20h40</th>
+                    <td>Programação Frontend I</td>
+                    <td>Redes de Computadores</td>
+                    <td>Dispensado</td>
+                    <td>Programação Frontend I</td>
+                    <td>Redes de Computadores</td>
+                </tr>
+
+                <tr>
+                    <th>21h35</th>
+                    <td>Programação Frontend I</td>
+                    <td>Redes de Computadores</td>
+                    <td>Dispensado</td>
+                    <td>Programação Frontend I</td>
+                    <td>Redes de Computadores</td>
+                </tr>
+
+            </table>
         </section>
 
     </main>
