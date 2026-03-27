@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Diário de Experiências Marcantes</title>
+</head>
+<body>
+
+  <h1>Diário de Experiências Marcantes</h1>
+  <p>Use este formulário para registrar um momento marcante do seu dia.</p>
+
+    <p>
+      <label for="nome">Seu nome:</label><br>
+      <input type="text" id="nome" name="nome">
+    </p>
+
+    <p>
+      <label for="email">Seu e-mail:</label><br>
+      <input type="email" id="email" name="email">
+    </p>
+
+    <p>
+      <label for="data">Data do acontecimento:</label><br>
+      <input type="date" id="data" name="data">
+    </p>
+
+    <p>Tipo de experiência:</p>
+    <p>
+      <input type="radio" id="passeio" name="tipo" value="passeio">
+      <label for="passeio">Passeio/Viagem</label><br>
+
+      <input type="radio" id="conquista" name="tipo" value="conquista">
+      <label for="conquista">Conquista/Meta</label><br>
+
+      <input type="radio" id="aprendizado" name="tipo" value="aprendizado">
+      <label for="aprendizado">Aprendizado</label><br>
+
+      <input type="radio" id="inesperado" name="tipo" value="inesperado">
+      <label for="inesperado">Algo inesperado</label>
+    </p>
+
+    <p>
+      <label for="titulo">Título do registro (ex: “Primeira trilha”, “Entrevista”, “Apresentei um trabalho”):</label><br>
+      <input type="text" id="titulo" name="titulo">
+    </p>
+
+    <p>
+      <label for="local">Local:</label><br>
+      <select id="local" name="local">
+        <option value="casa">Em casa</option>
+        <option value="faculdade">Na faculdade</option>
+        <option value="trabalho">No trabalho</option>
+        <option value="rua">Na rua</option>
+        <option value="natureza">Na natureza</option>
+        <option value="online">Online</option>
+      </select>
+    </p>
+
+    <p>Como você se sentiu? (pode marcar mais de um)</p>
+    <p>
+      <input type="checkbox" id="feliz" name="sentimento" value="feliz">
+      <label for="feliz">Feliz</label><br>
+
+      <input type="checkbox" id="orgulhoso" name="sentimento" value="orgulhoso">
+      <label for="orgulhoso">Orgulhoso(a)</label><br>
+
+      <input type="checkbox" id="nervoso" name="sentimento" value="nervoso">
+      <label for="nervoso">Nervoso(a)</label><br>
+
+      <input type="checkbox" id="tranquilo" name="sentimento" value="tranquilo">
+      <label for="tranquilo">Tranquilo(a)</label>
+    </p>
+
+    <p>
+      <label for="nota">Nota do dia (0 a 10):</label><br>
+      <input type="number" id="nota" name="nota">
+    </p>
+
+    <p>
+      <label for="descricao">Descreva o que aconteceu:</label><br>
+      <textarea id="descricao" name="descricao" rows="5" cols="45"></textarea>
+    </p>
+
+    <p>
+      <input type="submit" value="Enviar">
+    </p>
+
+  </form>
+
+  <p>    
+  <a href="index.html">Voltar para a página principal</a>
+  </p>
+
+</body>
+</html>
