@@ -2,56 +2,9 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Exercício 5</title>
+    <title>Exercício 8</title>
 
-    <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 18px;
-            line-height: 1.6;
-            margin: 40px;
-        }
-
-        h1{ font-size: 38px; }
-        h2{ font-size: 30px; margin-top: 40px; }
-        h3{ font-size: 24px; }
-
-        p, li{ font-size: 18px; }
-
-        img{
-            vertical-align: middle;
-            margin-right: 8px;
-        }
-
-        a{
-            text-decoration: none;
-            color: #003366;
-        }
-
-        a:hover{
-            text-decoration: underline;
-        }
-
-        footer{
-            margin-top: 50px;
-            font-size: 16px;
-        }
-
-        /* CSS adicionado apenas para a tabela */
-
-        table{
-            border-collapse: collapse;
-            width: 100%;
-            margin-top: 20px;
-        }
-
-        th, td{
-            border: 1px solid black;
-            padding: 10px;
-            text-align: center;
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles8.css">
 </head>
 
 <body>
@@ -111,49 +64,55 @@
                 Além disso, deixei links informativos e algumas músicas relacionadas, para quem quiser explorar mais.
             </p>
 
-            <h3>Meus universos favoritos</h3>
-            <ol>
-                <li>
-                    <img src="img/icones/SouthPark.png" alt="Ícone South Park" width="150" height="130">
-                    <a href="https://pt.wikipedia.org/wiki/South_Park" target="_blank" rel="noopener noreferrer">
-                        South Park
-                    </a>
-                </li>
-                <li>
-                    <img src="img/icones/HarryPotter.png" alt="Ícone Harry Potter" width="150" height="150">
-                    <a href="https://pt.wikipedia.org/wiki/Harry_Potter" target="_blank" rel="noopener noreferrer">
-                        Harry Potter
-                    </a>
-                </li>
-                <li>
-                    <img src="img/icones/Simpsons.png" alt="Ícone Os Simpsons" width="150" height="150">
-                    <a href="https://pt.wikipedia.org/wiki/Os_Simpsons" target="_blank" rel="noopener noreferrer">
-                        Os Simpsons
-                    </a>
-                </li>
-            </ol>
+            <!--div caixa-sagas-->
+            <div class="caixa-sagas">
 
-            <h3>Músicas relacionadas</h3>
-            <ul>
-                <li>
-                    <a href="https://en.wikipedia.org/wiki/South_Park_(Music_from_and_Inspired_by_the_TV_Series)" target="_blank" rel="noopener noreferrer">
-                        South Park Theme Song
-                    </a>
-                </li>
-                <li>
-                    <a href="https://pt.wikipedia.org/wiki/Hedwig%27s_Theme" target="_blank" rel="noopener noreferrer">
-                        Hedwig's Theme
-                    </a>
-                </li>
-                <li>
-                    <a href="https://en.wikipedia.org/wiki/The_Simpsons_Theme" target="_blank" rel="noopener noreferrer">
-                        The Simpsons Theme
-                    </a>
-                </li>
-            </ul>
+                <h3>Meus universos favoritos</h3>
+                <ol>
+                    <li>
+                        <img src="img/icones/SouthPark.png" alt="Ícone South Park" width="150" height="130">
+                        <a href="https://pt.wikipedia.org/wiki/South_Park" target="_blank" rel="noopener noreferrer">
+                            South Park
+                        </a>
+                    </li>
+                    <li>
+                        <img src="img/icones/HarryPotter.png" alt="Ícone Harry Potter" width="150" height="150">
+                        <a href="https://pt.wikipedia.org/wiki/Harry_Potter" target="_blank" rel="noopener noreferrer">
+                            Harry Potter
+                        </a>
+                    </li>
+                    <li>
+                        <img src="img/icones/Simpsons.png" alt="Ícone Os Simpsons" width="150" height="150">
+                        <a href="https://pt.wikipedia.org/wiki/Os_Simpsons" target="_blank" rel="noopener noreferrer">
+                            Os Simpsons
+                        </a>
+                    </li>
+                </ol>
+
+                <h3>Músicas relacionadas</h3>
+                <ul>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/South_Park_(Music_from_and_Inspired_by_the_TV_Series)" target="_blank" rel="noopener noreferrer">
+                            South Park Theme Song
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://pt.wikipedia.org/wiki/Hedwig%27s_Theme" target="_blank" rel="noopener noreferrer">
+                            Hedwig's Theme
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/The_Simpsons_Theme" target="_blank" rel="noopener noreferrer">
+                            The Simpsons Theme
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
         </section>
 
-        <section>
+        <!--id disciplinas-->
+        <section id="disciplinas">
             <h2>Horários das Disciplinas</h2>
 
             <table>
@@ -192,25 +151,25 @@
 
                 <tr>
                     <th>20h40</th>
-                    <td>Programação Frontend I</td>
+                    <td class="destaque">Programação Frontend I</td>
                     <td>Redes de Computadores</td>
                     <td>Dispensado</td>
-                    <td>Programação Frontend I</td>
+                    <td class="destaque">Programação Frontend I</td>
                     <td>Redes de Computadores</td>
                 </tr>
 
                 <tr>
                     <th>21h35</th>
-                    <td>Programação Frontend I</td>
+                    <td class="destaque">Programação Frontend I</td>
                     <td>Redes de Computadores</td>
                     <td>Dispensado</td>
-                    <td>Programação Frontend I</td>
+                    <td class="destaque">Programação Frontend I</td>
                     <td>Redes de Computadores</td>
                 </tr>
             </table>
         </section>
 
-        <section>            
+        <section>
             <audio autoplay loop>
                 <source src="audio/funk_groove.mp3" type="audio/mpeg">
                 Seu navegador não suporta o áudio.

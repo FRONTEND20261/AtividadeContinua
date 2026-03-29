@@ -1,0 +1,101 @@
+/* box sizing */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* estilo base */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 40px;
+    background-color: #333333;
+    color: #F2F2F2;
+}
+
+/* texto */
+h1{
+    font-size: 38px;
+    color: #FFD600;
+}
+
+h2{
+    font-size: 30px;
+    margin-top: 40px;
+    color: #00E5FF;
+}
+
+h3{
+    font-size: 24px;
+    color: #FF5252;
+}
+
+p, li{
+    font-size: 18px;
+}
+
+p{
+    text-align: justify;
+}
+
+li{
+    margin-bottom: 8px;
+}
+
+/* links */
+a{
+    text-decoration: none;
+    color: #69F0AE;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #FFD600;
+}
+
+/* imagens */
+img{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* rodape */
+footer{
+    margin-top: 50px;
+    font-size: 16px;
+    color: #F2F2F2;
+}
+
+/* tabela */
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td{
+    border: 1px solid #F2F2F2;
+    padding: 10px;
+    text-align: center;
+}
+
+/* caixa sagas */
+.caixa-sagas{
+    background-color: rgb(230, 230, 230);
+    border: 2px solid black;
+    padding: 20px;
+    margin: 30px;
+    height: 300px;
+    overflow: auto;
+    color: #222222;
+}
+
+/* destaque disciplinas */
+#disciplinas .destaque{
+    color: rgb(200, 0, 0);
+    font-weight: bold;
+}
