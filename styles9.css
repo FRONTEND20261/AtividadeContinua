@@ -99,3 +99,34 @@ th, td{
     color: rgb(200, 0, 0);
     font-weight: bold;
 }
+
+/* colunas flex */
+.colunas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* cada coluna */
+.coluna{
+    width: 32%;
+    padding: 10px;
+    border: 1px solid #F2F2F2;
+}
+
+/* pseudo-classe */
+.coluna:hover{
+    background-color: #444444;
+}
+
+/* pseudo-elementos */
+.coluna p::first-letter{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.coluna h3::after{
+    content: "";
+}
