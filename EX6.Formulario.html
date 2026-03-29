@@ -9,6 +9,8 @@
   <h1>Diário de Experiências Marcantes</h1>
   <p>Use este formulário para registrar um momento marcante do seu dia.</p>
 
+  <form action="/exemplo.php" method="POST">
+
     <p>
       <label for="nome">Seu nome:</label><br>
       <input type="text" id="nome" name="nome">
@@ -47,6 +49,7 @@
     <p>
       <label for="local">Local:</label><br>
       <select id="local" name="local">
+        <option value="">Selecione...</option>
         <option value="casa">Em casa</option>
         <option value="faculdade">Na faculdade</option>
         <option value="trabalho">No trabalho</option>
@@ -87,8 +90,8 @@
 
   </form>
 
-  <p>    
-  <a href="index.html">Voltar para a página principal</a>
+  <p>
+    <a href="index.html">Voltar para a página principal</a>
   </p>
 
 </body>

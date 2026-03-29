@@ -1,0 +1,71 @@
+/*Estilo base da página*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 40px;
+    background-color: #333333;
+    color: #F2F2F2;
+}
+
+/*Elementos de texto*/
+h1{
+    font-size: 38px;
+    color: #FFD600; 
+}
+
+h2{
+    font-size: 30px;
+    margin-top: 40px;
+    color: #00E5FF; 
+}
+
+h3{
+    font-size: 24px;
+    color: #FF5252; 
+}
+
+p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+li{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+a{
+    text-decoration: none;
+    color: #69F0AE; 
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #FFD600; 
+}
+
+/*Outros elementos (preferência)*/
+img{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+footer{
+    margin-top: 50px;
+    font-size: 16px;
+    color: #F2F2F2;
+}
+
+/*Tabela (preferência)*/
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td{
+    border: 1px solid #F2F2F2;
+    padding: 10px;
+    text-align: center;
+}
