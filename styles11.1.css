@@ -1,0 +1,259 @@
+/* box sizing */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* estilo base */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 40px;
+    background-color: #333333;
+    color: #F2F2F2;
+}
+
+/* texto */
+h1 {
+    font-size: 38px;
+    color: #FFD600;
+}
+h2 {
+    font-size: 30px;
+    margin-top: 40px;
+    color: #00E5FF;
+}
+h3 {
+    font-size: 24px;
+    color: #FF5252;
+}
+p, li {
+    font-size: 18px;
+}
+p {
+    text-align: justify;
+}
+li {
+    margin-bottom: 8px;
+}
+
+/* links */
+a {
+    text-decoration: none;
+    color: #0047AB;
+}
+a:hover {
+    text-decoration: underline;
+    color: #D10000;
+}
+
+/* imagens */
+img {
+    vertical-align: middle;
+    margin-right: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* rodape */
+footer {
+    margin-top: 50px;
+    font-size: 16px;
+    color: #F2F2F2;
+}
+
+/* tabela */
+.tabela-scroll {
+    width: 100%;
+    overflow-x: auto;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 500px;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #F2F2F2;
+    padding: 10px;
+    text-align: center;
+}
+
+/* caixa sagas */
+.caixa-sagas {
+    background-color: rgb(230, 230, 230);
+    border: 2px solid black;
+    padding: 20px;
+    margin: 30px;
+    height: 300px;
+    overflow: auto;
+    color: #222222;
+}
+
+/* destaque disciplinas */
+#disciplinas .destaque {
+    color: rgb(200, 0, 0);
+    font-weight: bold;
+}
+
+/* colunas flex */
+.colunas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* cada coluna */
+.coluna {
+    width: 32%;
+    padding: 10px;
+    border: 1px solid #F2F2F2;
+}
+
+/* pseudo-classe */
+.coluna:hover {
+    background-color: #444444;
+}
+
+/* pseudo-elementos */
+.coluna p::first-letter {
+    font-size: 30px;
+    font-weight: bold;
+}
+.coluna h3::after {
+    content: "";
+}
+
+.titulo-icones {
+    margin: 0;
+}
+.link-icones {
+    color: #00E5FF;
+    text-decoration: none;
+    font-size: 22px;
+}
+.link-icones:hover {
+    text-decoration: underline;
+    color: #00E5FF;
+}
+
+
+/* ==========================================
+   BREAKPOINT 1 — até 1024px
+   ========================================== */
+
+@media screen and (max-width: 1024px) {
+    body {
+        margin: 24px;
+    }
+
+    .coluna {
+        width: 48%;
+        margin-bottom: 16px;
+    }
+}
+
+
+/* ==========================================
+   BREAKPOINT 2 — até 768px
+   ========================================== */
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        margin: 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p, li {
+        font-size: 16px;
+    }
+
+    .colunas {
+        flex-direction: column;
+    }
+
+    .coluna {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .caixa-sagas {
+        margin: 10px 0;
+    }
+}
+
+
+/* ==========================================
+   BREAKPOINT 3 — até 480px
+   ========================================== */
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 15px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p, li {
+        font-size: 15px;
+    }
+
+    .link-icones {
+        font-size: 18px;
+    }
+}
+
+
+/* ==========================================
+   ORIENTAÇÃO — Paisagem (landscape)
+   ========================================== */
+
+@media screen and (orientation: landscape) {
+    .colunas {
+        flex-direction: row;
+    }
+
+    .coluna {
+        width: 32%;
+    }
+}
+
+
+/* ==========================================
+   ORIENTAÇÃO — Retrato (portrait)
+   ========================================== */
+
+@media screen and (orientation: portrait) {
+    .colunas {
+        flex-direction: column;
+    }
+
+    .coluna {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+}

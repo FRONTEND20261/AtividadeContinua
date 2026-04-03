@@ -1,0 +1,181 @@
+/* estilo base */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #333333;
+    color: #F2F2F2;
+}
+
+#barra-topo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333333;
+    border-bottom: 1px solid #F2F2F2;
+    padding: 20px;
+    z-index: 1000;
+}
+
+#barra-topo h1 {
+    font-size: 28px;
+    margin: 0;
+    color: #FFD600;
+}
+
+#barra-topo p {
+    margin: 10px 0 0 0;
+}
+
+#barra-topo a {
+    text-decoration: none;
+    color: #00E5FF;
+}
+
+#barra-topo a:hover {
+    text-decoration: underline;
+    color: #D10000;
+}
+
+main {
+    margin-top: 120px;
+    padding: 40px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #00E5FF;
+    margin-top: 0;
+}
+
+#grid-icones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.icone {
+    border: 1px solid #F2F2F2;
+    padding: 10px;
+    text-align: center;
+    background-color: #444444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icone img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background-color: #333333;
+    margin-bottom: 10px;
+}
+
+.icone p {
+    margin: 6px 0;
+}
+
+
+/* ==========================================
+   BREAKPOINT 1 — até 1024px (3 colunas)
+   ========================================== */
+
+@media screen and (max-width: 1024px) {
+    main {
+        margin-top: 110px;
+        padding: 24px;
+    }
+
+    #grid-icones {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* ==========================================
+   BREAKPOINT 2 — até 768px (2 colunas)
+   ========================================== */
+
+@media screen and (max-width: 768px) {
+    #barra-topo {
+        padding: 14px 16px;
+    }
+
+    #barra-topo h1 {
+        font-size: 22px;
+    }
+
+    main {
+        margin-top: 95px;
+        padding: 16px;
+    }
+
+    #grid-icones {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+    }
+}
+
+
+/* ==========================================
+   BREAKPOINT 3 — até 480px (1 coluna)
+   ========================================== */
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    #barra-topo h1 {
+        font-size: 18px;
+    }
+
+    #grid-icones {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ==========================================
+   ORIENTAÇÃO — Paisagem (landscape)
+   Barra do topo compacta
+   ========================================== */
+
+@media screen and (orientation: landscape) {
+    #barra-topo {
+        padding: 8px 20px;
+    }
+
+    #barra-topo h1 {
+        font-size: 20px;
+    }
+
+    #barra-topo p {
+        margin: 2px 0 0 0;
+    }
+
+    main {
+        margin-top: 70px;
+    }
+}
+
+
+/* ==========================================
+   ORIENTAÇÃO — Retrato (portrait)
+   Barra do topo com espaçamento normal
+   ========================================== */
+
+@media screen and (orientation: portrait) {
+    #barra-topo {
+        padding: 16px 20px;
+    }
+
+    main {
+        margin-top: 100px;
+    }
+}
